@@ -2,6 +2,13 @@ public class App {
   
   public static void printTriangle(Object[] arr) {
 
+for(int row=0;row<arr.length;row++){
+for(int col=0;col<=row;col++){
+System.out.print(arr[col]);
+}
+System.out.println();
+}
+
  }
     
   public static void main(String args[]) {
