@@ -1,8 +1,17 @@
+package src;
+
 import java.util.Arrays;
 
 public class App {
   
   public static Object[] rotateRight(Object[] arr) {
+	  
+	  Object temp=arr[0];
+	  
+	  for(int i=1;i<arr.length;i++) {
+		  arr[i-1]=arr[i];
+	  }
+	  arr[arr.length-1]=temp;	
 	  return arr;
   }
   
